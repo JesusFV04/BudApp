@@ -129,6 +129,14 @@ fun HomeScreen(navController: NavController) {
         ) {
             navController.navigate(Screen.History.route)
         }
+        Spacer(modifier = Modifier.height(8.dp))
+
+        ActionButton(
+            text = "Ver estadísticas",
+            icon = Icons.Default.Info
+        ) {
+            navController.navigate(Screen.Stats.route)
+        }
 
         Spacer(modifier = Modifier.height(32.dp))
 
@@ -142,6 +150,8 @@ fun HomeScreen(navController: NavController) {
                 popUpTo(Screen.Home.route) { inclusive = true }
             }
         }
+
+
     }
 }
 

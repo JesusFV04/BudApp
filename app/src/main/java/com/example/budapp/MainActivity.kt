@@ -54,6 +54,10 @@ class MainActivity : ComponentActivity() {
                         composable(Screen.History.route) {
                             HistorialScreen(navController)
                         }
+                        composable(Screen.Stats.route) {
+                            EstadisticasScreen(navController)
+                        }
+
                     }
                 }
             }

@@ -10,4 +10,5 @@ sealed class Screen(val route: String) {
     }
 
     object History : Screen("history")
+    object Stats : Screen("stats") // 👈 NUEVA RUTA
 }
